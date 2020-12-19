@@ -7,6 +7,20 @@
 @import "./utilities/_variables.scss";
 @import "./base/_typo.scss";
 
-/* ------------------------------------------ reset*/
+/* ------------------------------------------ header*/
 
 @import "./layout/_header.scss";
+
+/* ------------------------------------------ main*/
+
+main{
+    width: 100%;
+    min-width: 320px; 
+    height: auto;
+    background-color: $off-white;
+} 
+
+/* ------------------------------------------ main - seccion intercambios*/
+
+@import "./layout/_seccion-intercambio.scss";
+@import "./layout/seccion-beneficios.scss";

@@ -1,0 +1,17 @@
+.main-product-detail{
+    position:relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: $warm-black;
+}
+
+.main-product-detail > span{
+    position: absolute;
+    top: -12px;
+    left: calc(50% - 20px);
+    width: 40px;
+    height: 25px;
+    background-image: url("../assets/icons/isotipo.svg");
+}

@@ -1,0 +1,16 @@
+section.main-exchange-container
+    div.background-img
+    div.main-exchange-container__text-container
+        h2= intercambio_h2
+        p= intercambio_p
+    section.main-table-container
+        h3 Monedas
+        .main-table-container__table
+            each coin in intercambio_tabla
+                h4= coin[0]
+                p(class= coin[0])= coin[1]
+                    span
+        p
+            span Actualizado: 
+            |19 Julio 23:45
+        

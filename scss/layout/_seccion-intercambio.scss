@@ -1,0 +1,131 @@
+.main-exchange-container{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.main-exchange-container__text-container{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.main-exchange-container .background-img{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-image: url("../assets/images/bitcoin.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-exchange-container__text-container h2 {
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: $black;
+}
+
+.main-exchange-container__text-container p{
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: #757575;
+}
+
+.main-table-container{
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: left;
+
+    & h3{
+        margin-bottom: 15px;
+        margin-left: 12px;
+        font-size: 1.8rem;
+        font-weight: bold;
+        line-height: 2.3rem;
+        color: #FF9536;
+    }
+
+    &__table{
+
+        display: grid;
+        grid-template: repeat(4, 39px) / 105px 95px;
+        align-items: center;
+        justify-items: start;
+        background-color: $white;
+        border-radius: 8px 0px 0px 0px;
+        & h4{
+            margin-left: 12px;
+            font-size: 1.6rem;
+            font-weight: 500;
+            line-height: 1.9rem;
+            color: #B5B0AC;
+            ;
+        }
+        & p{
+            margin-left: 12px;
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 1.7rem;
+            color: #757575;
+            & span{
+                display: inline-block;
+                width: 12px;
+                height: 13px;
+                margin-left: 12px;
+                &:nth-child(2){
+                    background-image: url("../assets/icons/trending-up.svg");
+                }
+                &:nth-child(3){
+                    background-image: url("../assets/icons/trending-down.svg");
+                }
+                &:nth-child(4){
+                    background-image: url("../assets/icons/trending-down.svg");
+                }
+            }
+        }
+        & .Bitcoin span{
+            background-image: url("../assets/icons/trending-down.svg");
+        }
+        & .Ethereum span{
+            background-image: url("../assets/icons/trending-up.svg");
+        }
+        & .Ripple span{
+            background-image: url("../assets/icons/trending-down.svg");
+        }
+        & .Stellar span{
+            background-image: url("../assets/icons/trending-down.svg");
+        }
+
+
+    }
+
+    & > p{
+        width: 175px;
+        margin: 0 auto;
+        margin-top: 16px;
+        padding: 8px;
+
+        text-align: center;
+        background-color: $soft-orange;
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 19px;
+        color: $black;
+        border-radius: 8px;
+        & span{
+            font-weight: bold;
+        }
+    }
+}
