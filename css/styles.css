@@ -195,6 +195,7 @@ main {
     .main-table-container > p span {
       font-weight: bold; }
 
+/* ------------------------------------------ main - seccion beneficios*/
 .main-product-detail {
   position: relative;
   width: 100%;
@@ -202,11 +203,66 @@ main {
   height: auto;
   padding: 20px 10px;
   background-color: #201E1C; }
-
-.main-product-detail > span {
-  position: absolute;
-  top: -12px;
-  left: calc(50% - 20px);
-  width: 40px;
-  height: 25px;
-  background-image: url("../assets/icons/isotipo.svg"); }
+  .main-product-detail > span {
+    position: absolute;
+    top: -12px;
+    left: calc(50% - 20px);
+    width: 40px;
+    height: 25px;
+    background-image: url("../assets/icons/isotipo.svg"); }
+  .main-product-detail > div {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center; }
+  .main-product-detail__title {
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: #fff; }
+  .main-product-detail__text {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080; }
+  .main-product-detail .product-card-container__card {
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 150px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: #282623;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16); }
+    .main-product-detail .product-card-container__card-icon {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      margin-bottom: 10px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; }
+    .main-product-detail .product-card-container__card:nth-child(1) span {
+      background-image: url("../assets/icons/clock.svg"); }
+    .main-product-detail .product-card-container__card:nth-child(2) span {
+      background-image: url("../assets/icons/eye.svg"); }
+    .main-product-detail .product-card-container__card:nth-child(3) span {
+      background-image: url("../assets/icons/dollar-sign.svg"); }
+    .main-product-detail .product-card-container__card:nth-child(4) span {
+      background-image: url("../assets/icons/check-circle.svg"); }
+    .main-product-detail .product-card-container__card-title {
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+      font-weight: bold;
+      line-height: 1.8rem;
+      color: #fff; }
+    .main-product-detail .product-card-container__card-text {
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 1.8rem;
+      color: #808080; }

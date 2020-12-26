@@ -1,17 +1,91 @@
 .main-product-detail{
-    position:relative;
+    position:relative; //aplicamos esto porque luego a uno de sus hijos le colocamos absolute
     width: 100%;
-    min-width: 320px;
+    min-width: 320px; //320px es el ancho minimo de los celulares
     height: auto;
     padding: 20px 10px;
     background-color: $warm-black;
-}
 
-.main-product-detail > span{
-    position: absolute;
-    top: -12px;
-    left: calc(50% - 20px);
-    width: 40px;
-    height: 25px;
-    background-image: url("../assets/icons/isotipo.svg");
+    & > span{
+        position: absolute;
+        top: -12px;
+        left: calc(50% - 20px);
+        width: 40px;
+        height: 25px;
+        background-image: url("../assets/icons/isotipo.svg");
+    }
+
+    & > div{
+        width: 90%;
+        min-width: 288px;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    &__title{
+        margin-bottom: 20px;
+        font-size: 2.4rem;
+        font-weight: bold;
+        line-height: 2.6rem;
+        color: $white;
+    }
+
+    &__text{
+        margin-bottom: 20px;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 1.8rem;
+        color: #808080;
+    }
+
+    & .product-card-container__card{
+        width: 90%;
+        min-width: 288px;
+        max-width: 400px;
+        height: 150px;
+        margin: 15px auto;
+        padding: 15px;
+        background-color: $black;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+
+        &-icon{
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            margin-bottom: 10px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        &:nth-child(1) span{
+            background-image: url("../assets/icons/clock.svg");
+        }
+        &:nth-child(2) span{
+            background-image: url("../assets/icons/eye.svg");
+        }
+        &:nth-child(3) span{
+            background-image: url("../assets/icons/dollar-sign.svg");
+        }
+        &:nth-child(4) span{
+            background-image: url("../assets/icons/check-circle.svg");
+        }
+
+        &-title{
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+            font-weight: bold;
+            line-height: 1.8rem;
+            color: $white;
+        }
+
+        &-text{
+            font-size: 1.4rem;
+            font-weight: 500;
+            line-height: 1.8rem;
+            color: #808080;
+        }
+    }
 }
