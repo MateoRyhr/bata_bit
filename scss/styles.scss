@@ -5,7 +5,14 @@
 /* ------------------------------------------ utilities and typo */
 
 @import "./utilities/_variables.scss";
+@import "./utilities/media_queries_mixin.scss";
 @import "./base/_typo.scss";
+
+/* ------------------------------------------ scroll mejorado */
+
+html {
+	scroll-behavior: smooth;
+}
 
 /* ------------------------------------------ header*/
 
@@ -26,4 +33,13 @@ main{
 
 /* ------------------------------------------ main - seccion beneficios*/
 
-@import "./layout/seccion-beneficios.scss";
+@import "./layout/_seccion-beneficios.scss";
+
+/* ------------------------------------------ main - seccion planes*/
+
+@import "./layout/_seccion-planes.scss";
+
+/* ------------------------------------------ footer*/
+
+@import "./layout/footer.scss";
+

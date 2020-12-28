@@ -1,0 +1,137 @@
+.plans {
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+
+    &-img-container{
+        width: 100%;
+        min-width: 320px;
+        height: 50vh;
+        background-image: url("../assets/images/bitcoinbaby2x.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &-img-container-title{
+        padding-top: 60px;
+        font-size: 2.4rem;
+        font-weight: bold;
+        line-height: 2.6rem;
+        color: $white;
+        text-align: center;
+    }
+
+    & > div{
+        width: 90%;
+        min-width: 288px;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 50px;
+
+        & h2{
+            padding-top: 50px;
+            font-size: 2.4rem;
+            font-weight: bold;
+            line-height: 2.6rem;
+            color: $black;
+        }
+
+        & p{
+            padding-top: 30px;
+            font-size: 1.4rem;
+            font-weight: 500;
+            line-height: 1.8rem;
+            color: #757575;
+        }
+    }
+
+    &-slider{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        //justify-content: space-evenly;
+        height: 316px;
+        min-width: 320px;
+        overflow-x: scroll;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x proximity;
+
+        &__card{
+            position: relative;
+            scroll-snap-align: center; //centra el elemento al hacer scroll - el scroll no puede quedar en el medio
+            width: 70%;
+            min-width: 190px;
+            max-width: 300px;
+            height: 250px;
+            margin: 50px 5px 0px;
+            padding: 0 15px;
+            background-color: $white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(89,73,30,0.16);
+
+            &-optional-text{
+                position: absolute;
+                width: 120px;
+                height: 31px;
+                padding-top: 8px;
+                left: calc(50% - 60px);
+                top: -15px;
+                font-size: 1.2rem;
+                background-color: $bitcoin-orange;
+                color: $white;
+                border-radius: 8px;
+            }
+
+            &-title{
+                padding-top: 30px;
+                font-size: 1.4rem;
+                font-weight: 500;
+                line-height: 1.8rem;
+                color: $black;
+            }
+
+            &-price{
+                padding: 5px 0;
+                font-size: 5.2rem;
+                font-weight: bold;
+                line-height: 5.3rem;
+                color: $black;
+
+                & span{
+                    font-size: 1.2rem;
+                    font-weight: 300;
+                    vertical-align: 25px;
+                }
+            }
+
+            &-description{
+                font-size: 1.2rem;
+
+                color: #757575;
+            }
+
+            &-button{
+                width: 150px;
+                height: 48px;
+                margin-top: 20px;
+                background-color: $off-white;
+                font-size: 1.4rem;
+                font-weight: bold;
+                line-height: 1.8rem;
+                color: $black;
+                border: 2px solid $bitcoin-orange;
+                border-radius: 4px;
+
+                & span{
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    background-image: url("../assets/icons/arrow-right.svg");
+                    vertical-align: text-bottom;
+                }
+            }
+        }
+    }
+}

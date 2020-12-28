@@ -17,6 +17,13 @@ html {
 .main-table-container > p {
   font-family: 'Inter', sans-serif; }
 
+.plans-slider__card-button {
+  font-family: 'DM Sans', sans-serif; }
+
+/* ------------------------------------------ scroll mejorado */
+html {
+  scroll-behavior: smooth; }
+
 /* ------------------------------------------ header*/
 header {
   position: relative;
@@ -233,7 +240,7 @@ main {
     width: 90%;
     min-width: 288px;
     max-width: 400px;
-    height: 150px;
+    min-height: 150px;
     margin: 15px auto;
     padding: 15px;
     background-color: #282623;
@@ -266,3 +273,133 @@ main {
       font-weight: 500;
       line-height: 1.8rem;
       color: #808080; }
+
+/* ------------------------------------------ main - seccion planes*/
+.plans {
+  width: 100%;
+  min-width: 320px;
+  padding-bottom: 70px;
+  text-align: center; }
+  .plans-img-container {
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    background-image: url("../assets/images/bitcoinbaby2x.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .plans-img-container-title {
+    padding-top: 60px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: #fff;
+    text-align: center; }
+  .plans > div {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px; }
+    .plans > div h2 {
+      padding-top: 50px;
+      font-size: 2.4rem;
+      font-weight: bold;
+      line-height: 2.6rem;
+      color: #282623; }
+    .plans > div p {
+      padding-top: 30px;
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 1.8rem;
+      color: #757575; }
+  .plans-slider {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    height: 316px;
+    min-width: 320px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity; }
+    .plans-slider__card {
+      position: relative;
+      scroll-snap-align: center;
+      width: 70%;
+      min-width: 190px;
+      max-width: 300px;
+      height: 250px;
+      margin: 50px 5px 0px;
+      padding: 0 15px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16); }
+      .plans-slider__card-optional-text {
+        position: absolute;
+        width: 120px;
+        height: 31px;
+        padding-top: 8px;
+        left: calc(50% - 60px);
+        top: -15px;
+        font-size: 1.2rem;
+        background-color: #F7931A;
+        color: #fff;
+        border-radius: 8px; }
+      .plans-slider__card-title {
+        padding-top: 30px;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 1.8rem;
+        color: #282623; }
+      .plans-slider__card-price {
+        padding: 5px 0;
+        font-size: 5.2rem;
+        font-weight: bold;
+        line-height: 5.3rem;
+        color: #282623; }
+        .plans-slider__card-price span {
+          font-size: 1.2rem;
+          font-weight: 300;
+          vertical-align: 25px; }
+      .plans-slider__card-description {
+        font-size: 1.2rem;
+        color: #757575; }
+      .plans-slider__card-button {
+        width: 150px;
+        height: 48px;
+        margin-top: 20px;
+        background-color: #FAF8F7;
+        font-size: 1.4rem;
+        font-weight: bold;
+        line-height: 1.8rem;
+        color: #282623;
+        border: 2px solid #F7931A;
+        border-radius: 4px; }
+        .plans-slider__card-button span {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          background-image: url("../assets/icons/arrow-right.svg");
+          vertical-align: text-bottom; }
+
+/* ------------------------------------------ footer*/
+.footer {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  background-color: #F7931A; }
+  .footer section {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center; }
+  .footer__left-section ul {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none; }
+    .footer__left-section ul li {
+      margin: 10px 0; }
+      .footer__left-section ul li a {
+        text-decoration: none;
+        color: #fff; }

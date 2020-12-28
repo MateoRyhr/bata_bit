@@ -1,0 +1,25 @@
+/* ------------------------------------------ utilities and typo */
+/* Media Queries Mixin
+**********************/
+html {
+  font-family: 'DM Sans', sans-serif; }
+
+.main-table-container__table {
+  font-family: 'Inter', sans-serif; }
+
+.main-table-container > p {
+  font-family: 'Inter', sans-serif; }
+
+.plans-slider__card-button {
+  font-family: 'DM Sans', sans-serif; }
+
+/* ------------------------------------------ media queries*/
+@media only screen and (min-width: 930px) {
+  .plans-slider {
+    justify-content: space-evenly;
+    overflow: auto; }
+  .product-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 930px;
+    margin: 0 auto; } }

@@ -1,0 +1,14 @@
+mixin selling_card(padre,container_class,optional_text,title,price,description,button)
+    article(class= padre + "__" + container_class)
+        if(optional_text != "")
+            p(class= padre + "__" + container_class + "-optional-text")= optional_text
+        div
+            h3(class= padre + "__" + container_class + "-title")= title
+            p(class= padre + "__" + container_class + "-price") 
+                                                                span $
+                                                                |#{price}
+            p(class= padre + "__" + container_class + "-description")= description
+            button(class= padre + "__" + container_class + "-button")
+                                                                        | #{button}
+                                                                        span
+                                                                        
